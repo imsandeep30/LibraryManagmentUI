@@ -1,0 +1,38 @@
+import React from "react";
+import Navbar from "./navbar";
+import { Aboutinfo } from "./Details/aboutdetauls";
+import "./home.css";
+import Leftsec from "./Cards/leftsec";
+import NotifyCard from "./Cards/notifycard";
+import { Notifications } from "./Details/fakenotification";
+import Hero from "./hero";
+export default function Home(){
+    
+    return (
+        <>
+            
+            <Navbar />
+            <div className="home-content">
+                <div className="left-section">
+                    <h2 id="heading">BookSea History</h2>
+                    {
+                        Aboutinfo.map((x)=>{
+                            return (
+                                <Leftsec imageUrl={x.imageurl} content ={x.content} num={x.num}/>
+                            );
+                        })
+                    }
+                    
+                </div>
+                <div className="right-section">
+                    <h1>Recent Notification</h1>
+                    {
+                        Notifications.map((notify)=>{
+                            return (<NotifyCard title={notify.BookTitle} time={notify.Time}/>);
+                        })
+                    }
+                </div>
+            </div>
+        </>
+    );
+}

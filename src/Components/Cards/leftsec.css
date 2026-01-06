@@ -1,0 +1,38 @@
+.left-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.left-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+.left-image {
+  width: 380px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  flex-shrink: 0;
+}
+
+.left-box p {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #2c2c2c;
+  margin: 0;
+  text-align: justify;
+}
+
+.right-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
