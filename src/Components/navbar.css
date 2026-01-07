@@ -60,6 +60,11 @@
   transform: translateY(-2px);
 }
 
+.login a{
+  background-color: #c91414;
+  color: white;
+}
+
 /* ANIMATION */
 @keyframes swim {
   0% {
